@@ -7,32 +7,36 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #121212;
-            color: #e0e0e0;
+            background-color: #0f172a; /* Cor combinando com a JS Arena V2 */
+            color: #f8fafc;
             line-height: 1.6;
             padding: 40px 20px;
         }
         .container {
             max-width: 800px;
             margin: auto;
-            background: #1e1e1e;
+            background: #1e293b;
             padding: 30px;
             border-radius: 15px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-            border-top: 5px solid #00ff88;
+            border-top: 5px solid #3b82f6; /* Azul do tema da V2 */
         }
-        h1 { color: #00ff88; border-bottom: 1px solid #333; padding-bottom: 10px; }
-        h2 { color: #00d9ff; margin-top: 25px; }
-        p { margin-bottom: 15px; }
-        .footer { margin-top: 40px; font-size: 0.8em; color: #777; text-align: center; }
+        h1 { color: #3b82f6; border-bottom: 1px solid #334155; padding-bottom: 10px; }
+        h2 { color: #22c55e; margin-top: 25px; }
+        p { margin-bottom: 15px; color: #94a3b8; }
+        .footer { margin-top: 40px; font-size: 0.8em; color: #64748b; text-align: center; }
         .back-btn {
             display: inline-block;
             margin-top: 20px;
-            color: #00ff88;
+            color: #3b82f6;
             text-decoration: none;
             font-weight: bold;
+            padding: 10px 20px;
+            border: 1px solid #3b82f6;
+            border-radius: 8px;
+            transition: 0.3s;
         }
-        .back-btn:hover { text-decoration: underline; }
+        .back-btn:hover { background: #3b82f6; color: white; }
     </style>
 </head>
 <body>
@@ -41,26 +45,26 @@
         <h1>Política de Privacidade - JS Arena</h1>
         <p>A sua privacidade é importante para nós. Esta política explica como o <strong>JS Arena</strong> e o desenvolvedor <strong>Js Music Brazil / CapybaraClickerJS</strong> lidam com informações.</p>
 
-        <h2>1. Coleta de Dados</h2>
-        <p>O JS Arena é um projeto focado em jogabilidade. Não coletamos informações pessoais identificáveis (como nome, CPF ou endereço) de forma automática. O jogo funciona localmente ou através de acesso web direto.</p>
+        <h2>1. Coleta de Dados e Firebase</h2>
+        <p>O JS Arena utiliza o <strong>Google Firebase Realtime Database</strong> para permitir partidas online. Ao jogar no modo online, os dados das jogadas (posição no tabuleiro e status da partida) são transmitidos temporariamente para os servidores do Firebase para sincronização entre os jogadores.</p>
 
-        <h2>2. Cookies e Tecnologias de Rastreamento</h2>
-        <p>Podemos utilizar tecnologias básicas de armazenamento local (Local Storage) para salvar seu progresso no jogo, pontuações e configurações de preferência no seu navegador ou dispositivo.</p>
+        <h2>2. Informações Pessoais</h2>
+        <p>Não coletamos informações pessoais identificáveis como nome real, e-mail, CPF ou geolocalização. O ID da sala criado pelo usuário é usado apenas para conectar dois jogadores na mesma partida.</p>
 
-        <h2>3. Links de Terceiros</h2>
-        <p>Nosso portal pode conter links para redes sociais (TikTok, YouTube, Kwai) e plataformas de terceiros como a Vercel. Recomendamos que você consulte as políticas de privacidade dessas plataformas ao acessá-las.</p>
+        <h2>3. Armazenamento Local</h2>
+        <p>Podemos utilizar tecnologias de armazenamento local (Local Storage) no seu navegador para salvar preferências simples, como o último modo de jogo selecionado ou recordes locais.</p>
 
-        <h2>4. Permissões do Android</h2>
-        <p>A versão Android (.APK) pode solicitar permissões básicas para o funcionamento do motor do jogo, como acesso à internet para carregar recursos web ou armazenamento para salvar dados do jogo.</p>
+        <h2>4. Links de Terceiros</h2>
+        <p>Nosso portal pode conter links para nossas redes sociais oficiais (YouTube <strong>Js Music Brazil</strong>, TikTok e Kwai). Ao clicar nesses links, você estará sujeito às políticas de privacidade dessas plataformas externas.</p>
 
-        <h2>5. Contato</h2>
-        <p>Se você tiver alguma dúvida sobre esta política, pode entrar em contato através das nossas redes sociais oficiais vinculadas ao <strong>Js Music Brazil</strong>.</p>
+        <h2>5. Hospedagem</h2>
+        <p>Este site é hospedado na plataforma <strong>Vercel</strong>, que pode coletar logs técnicos básicos (como endereço IP e tipo de navegador) para garantir a segurança e o funcionamento do serviço, conforme as normas da plataforma.</p>
 
-        <a href="/" class="back-btn">← Voltar para o Início</a>
+        <a href="https://js-arena-v2.vercel.app" class="back-btn">← Voltar para JS Arena V2</a>
     </div>
 
     <div class="footer">
-        <p>&copy; 2026 Universo JS - Todos os direitos reservados.</p>
+        <p>&copy; 2026 JS Arena - Desenvolvido por JS Music Brazil.</p>
     </div>
 
 </body>
